@@ -70,12 +70,12 @@ MGX_BASE=https://mgx.dev
 
 ## 🧪 Usage
 
-The CLI accepts a **mgx.dev chat workspace ID** (like `ac4a88ea71c14d088ab3557312439f50`) and a local output directory.
+The CLI accepts a **mgx.dev chat workspace ID** (like `ac4a88ea71c14d088ab3557312439f50`).
 
 ### Example:
 
 ```bash
-go run . ac4a88ea71c14d088ab3557312439f50 ./backup
+go run ./cmd/downloader --chat ac4a88ea71c14d088ab3557312439f50
 ```
 
 This will:
@@ -83,7 +83,6 @@ This will:
 1. Build the complete file tree  
 2. Display the JSON tree  
 3. Download all files concurrently with real-time progress bars  
-4. Save everything into `./backup`
 
 ---
 
